@@ -1,11 +1,11 @@
 import React from "react";
-import { Box, Text, Flex, Divider } from "@chakra-ui/core";
+import { Box, Flex, Text } from "@chakra-ui/core";
 
 function MainForm () {
     return (
-        <Box>
+        <Flex flexGrow="1">
             <Text>Form</Text>
-        </Box>
+        </Flex>
     )
 }
 

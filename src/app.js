@@ -1,6 +1,7 @@
 import React from "react";
 import MainForm from "./components/MainForm"
-import { Box, Text, Flex, Divider } from "@chakra-ui/core";
+import FormFooter from "./components/FormFooter"
+import { Box, Text, Flex } from "@chakra-ui/core";
 
 function App() {
   return (
@@ -38,6 +39,7 @@ function App() {
             Calculate your estimated Hifz end date
           </Text>
           <Box
+            class="title_divider"
             height="1px"
             width="100%"
             borderTop="1px"
@@ -53,6 +55,8 @@ function App() {
           </Box>
 
           <MainForm />
+          
+          <FormFooter />
         </Box>
         
       </Box>
