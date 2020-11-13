@@ -1,5 +1,6 @@
 import React from "react";
-import { Box, Text, Flex } from "@chakra-ui/core";
+import MainForm from "./components/MainForm"
+import { Box, Text, Flex, Divider } from "@chakra-ui/core";
 
 function App() {
   return (
@@ -17,7 +18,9 @@ function App() {
       >
         <Box
           class="main_content"
-          width="30vw"
+          marginY="5%"
+          padding="2%"
+          width="40vw"
           height="100%"
           display="flex"
           flexDirection="column"
@@ -41,8 +44,17 @@ function App() {
             borderColor="teal.100"
             borderRadius="md"
             marginY="10px"
-          />
+          >
+            {/* OR YOU COULD DO
+            <Divider orientation="horizontal" height="1px" borderColor="teal.300"
+              width="100%"
+              marginY="10px" />
+            */}
+          </Box>
+
+          <MainForm />
         </Box>
+        
       </Box>
     </Box>
   );
